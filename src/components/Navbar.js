@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <h2>The Kitchen</h2>
+      <h1>The Kitchen</h1>
       <nav ref={navRef}>
         <a href='/#'>Home</a>
         <a href='/#'>Menu</a>

@@ -11,21 +11,23 @@ const Navbar = () => {
   };
 
   return (
-    <header>
-      <h1>The Kitchen</h1>
-      <nav ref={navRef}>
-        <a href='/#'>Home</a>
-        <a href='/#'>Menu</a>
-        <a href='/#'>Locations</a>
-        <a href='/#'>About</a>
-        <button className='nav-btn nav-close-btn' onClick={showNavBar}>
-          <FaTimes />
+    <>
+      <header>
+        <h1>The Kitchen</h1>
+        <nav ref={navRef}>
+          <a href='/#'>Home</a>
+          <a href='/#'>Menu</a>
+          <a href='/#'>Locations</a>
+          <a href='/#'>About</a>
+          <button className='nav-btn nav-close-btn' onClick={showNavBar}>
+            <FaTimes />
+          </button>
+        </nav>
+        <button className='nav-btn' onClick={showNavBar}>
+          <FaBars />
         </button>
-      </nav>
-      <button className='nav-btn' onClick={showNavBar}>
-        <FaBars />
-      </button>
-    </header>
+      </header>
+    </>
   );
 };
 
